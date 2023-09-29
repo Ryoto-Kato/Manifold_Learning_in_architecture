@@ -62,9 +62,9 @@ For the ease of performing semantic understanding, I have displayed a sample ima
 
 
 # First observation: Compact clusters and Non-compact clusters
-Our first observation pertained to how the images of each architectural project are distributed in the latent structure mapping. By applying Principal Component Analysis (PCA) to each class, I can obtain the two most variant direction and their variance, which can describe the distribution of plots for each building. From this result, I can find which type each cluster belongs to, a compact cluster or a non-compact cluster. To determine those profiles of a cluster, I need to derive the maximum variance ratio (MVR). MVR can be derived as follows where maximum variance $\sigma_{i, \text{max}}^2$ and minimum variance $\sigma_{i, \text{min}}^2$ of ith building. 
+Our first observation pertained to how the images of each architectural project are distributed in the latent structure mapping. By applying Principal Component Analysis (PCA) to each class, I can obtain the two most variant direction and their variance, which can describe the distribution of plots for each building. From this result, I can find which type each cluster belongs to, a compact cluster or a non-compact cluster. To determine those profiles of a cluster, I need to derive the maximum variance ratio (MVR). MVR can be derived as follows where maximum variance $\sigma_{i,max}^2$ and minimum variance $\sigma_{i,min}^2$ of ith building. 
 
-$$ \text{MVR}(i) = \frac{\sigma_{i, \text{max}}^2}{\sigma_{i, \text{max}}^2 + \sigma_{i, \text{min}}^2} (\leqq1.0, \text{in 2D})$$
+$$\text{MVR}(i) = \frac{\sigma_{i,max}^2}{\sigma_{i,max}^2 + \sigma_{i,min}^2} (\leqq1.0)$$
 
 ![SortedMVR](./images/re1_sorted_max_ratio.png)
 
